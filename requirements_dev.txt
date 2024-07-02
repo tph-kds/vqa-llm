@@ -1,0 +1,28 @@
+pytorch==0.4.0
+torchvision
+cython
+matplotlib
+numpy
+scipy
+# opencv
+pyyaml
+packaging
+pycocotools
+tensorboardx
+h5py
+opencv-python
+
+streamlit
+pillow # for PIL
+
+# conda create -p env_nlp python==3.9 -y
+
+
+##  dev requirements
+
+pytest==7.1.3
+tox==3.25.1
+black==22.8.0
+flake8==5.0.4
+mypy==0.971
+-e .

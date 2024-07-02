@@ -1,0 +1,18 @@
+pytorch==0.4.0
+torchvision
+cython
+matplotlib
+numpy
+scipy
+# opencv
+pyyaml
+packaging
+pycocotools
+tensorboardx
+h5py
+opencv-python
+
+streamlit
+pillow # for PIL
+
+# conda create -p env_nlp python==3.9 -y
