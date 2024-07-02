@@ -1,5 +1,5 @@
 <h1 align="center">VISUAL QUESTION ANSWERING - LLM</h1>
-![Alt text](https://github.com/tph-kds/vqa-llm/blob/main/others/images/title_name.png)
+![](https://github.com/tph-kds/vqa-llm/blob/main/others/images/title_name.png)
 
 # Bert + Vit-Google : Answer some issues from Question + realted Image by MultiModel Training
 An implementation of the vqa model almost described similarly to the following in the paper:
