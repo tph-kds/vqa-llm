@@ -1,5 +1,19 @@
 
 
+## [1.2.0](https://github.com/tph-kds/vqa-llm/compare/1.1.0...1.2.0) (2024-07-03)
+
+
+### Features
+
+* create a new file poetry.lock ([f016faf](https://github.com/tph-kds/vqa-llm/commit/f016faf9b6a35559e8f06512420af08052cb7f5b))
+
+
+### Bug fixes
+
+* add code ci.yaml file ([d6c5599](https://github.com/tph-kds/vqa-llm/commit/d6c55994175e0c78a76df27b457822fdf700c079))
+* Update Dockerfile ([7c655b0](https://github.com/tph-kds/vqa-llm/commit/7c655b07166fef836394d7adafda2637c8337042))
+* Update release.yaml ([8bbd34b](https://github.com/tph-kds/vqa-llm/commit/8bbd34b5250da900c6ebe8c3a871a2f535682fbe))
+
 ## 1.1.0 (2024-07-03)
 
 
