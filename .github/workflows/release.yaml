@@ -6,7 +6,7 @@ on:
 
 env:
   # DOCKER_USERNAME: 
-  REPO: tph-kds/vqa-llm
+  REPO: hungtranml/vqa-llm
 
 jobs:
   docker:
