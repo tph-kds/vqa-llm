@@ -1,14 +1,14 @@
 {
   "name": "vqa-llm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "<h1 align=\"center\">VISUAL QUESTION ANSWERING - LLM</h1>",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-      "release": "release-it"
-    },
+    "release": "release-it"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
