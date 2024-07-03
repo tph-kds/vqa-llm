@@ -47,6 +47,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
-          tag_name: ${{ steps.versioning.outputs.version }}
-          release_name: ${{ steps.versioning.outputs.version }}
+          tag: ${{ steps.versioning.outputs.version }}
+          name: ${{ steps.versioning.outputs.version }}
           prerelease: true
