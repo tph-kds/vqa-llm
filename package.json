@@ -1,0 +1,60 @@
+{
+  "name": "vqa-llm",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">VISUAL QUESTION ANSWERING - LLM</h1>",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": [
+    {
+      "release": "release-it"
+    },
+    {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    {}
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
+    "release-it": "^17.4.1"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug fixes"
+            },
+            {}
+          ]
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.11"
+  }
+}

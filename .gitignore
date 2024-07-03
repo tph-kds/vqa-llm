@@ -165,3 +165,8 @@ cython_debug/
 # data folder on local
 Datasets/
 small_datasets_csv/
+
+node_modules/
+manual.md
+.husky/_/
+
