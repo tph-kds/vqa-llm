@@ -6,7 +6,7 @@ on:
 
 env:
   DOCKER_USERNAME: hungtranml
-  REPO: hungtranml/vqa-llm
+  REPO: hungtranml/vqa-multi-llm
 
 jobs:
   docker:
