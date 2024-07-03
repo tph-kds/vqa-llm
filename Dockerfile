@@ -32,8 +32,8 @@ ENV HOME "/app"
 
 # Copy the app code to the place expected by the runner
 # and make app user own everything in the directory.
-COPY ./app /app/app/
-RUN chown -R app:app /app/
+COPY ./serving/streamlit_app /app/app/
+RUN chown -R serving/streamlit_app:app /app/
 
 # Switch user
 USER 1000
