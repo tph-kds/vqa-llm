@@ -12,7 +12,14 @@ tensorboardx
 h5py
 opencv-python
 
+random
+requests
+tqdm
 streamlit
 pillow # for PIL
+
+datasets
+transformers 
+sentence_transformers
 
 # conda create -p env_nlp python==3.9 -y
