@@ -68,6 +68,8 @@ VQA model is a deep neural network that learns and responds to users when they p
 * streamlit
 * pillow # for PIL
 
+**The required supportive environment uses a hardware accelerator GPUs such as T4 of Colab, GPU A100, etc.**
+
 ### Prepare the Training Data
 
 Name | #Image | #Question | #Answer
@@ -116,7 +118,7 @@ Google - ViT ( visual_feature_extractor ): The Vision Transformer (ViT) is a tra
 I used Streamlit Framework for deploying this model but only run locally, if wanting run on server of HuggingFace, we need to register model (because of this model builded from scratch) [more information](https://huggingface.co/docs/transformers/custom_models)
 
 <p align="center">
-  <img align="center" src="https://github.com/tph-kds/image_storages/blob/96e0e682d3b8a959396cc229a766c4e5fd82d700/images/svgs/vqa-llm/deployment.png" width="800">
+  <img align="center" src="https://github.com/tph-kds/image_storages/blob/71f14c525869084d53e5e383c2bd49dea99f6239/images/svgs/vqa-llm/deployment.png" width="800">
   
 </p>
 
