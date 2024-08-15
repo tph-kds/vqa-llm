@@ -115,7 +115,7 @@ Google - ViT ( visual_feature_extractor ): The Vision Transformer (ViT) is a tra
 
 ### Deployment on HuggingFace
 
-I used Streamlit Framework for deploying this model but only run locally, if wanting run on server of HuggingFace, we need to register model (because of this model builded from scratch) [more information](https://huggingface.co/docs/transformers/custom_models)
+I used Streamlit Framework for deploying this model but it can only could be run locally, if wanting to run it on the server of HuggingFace, we need to complete some steps related to registering the model (because this model is built from scratch) [more information](https://huggingface.co/docs/transformers/custom_models)
 
 <p align="center">
   <img align="center" src="https://github.com/tph-kds/image_storages/blob/71f14c525869084d53e5e383c2bd49dea99f6239/images/svgs/vqa-llm/deployment.png" width="800">
