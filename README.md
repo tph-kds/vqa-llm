@@ -102,9 +102,23 @@ Google - ViT ( visual_feature_extractor ): The Vision Transformer (ViT) is a tra
 
 ## Inference And Demo
 
+
 ### Results
 
+| Data | #WUPS | #MRR | #Loss |
+| --- | --- | --- |  --- |
+| [Train]() | 0.23114 |	0.32561 | 4.52219 |
+| [Validation]() | 0.23152	|  0.32828 |	5.18071 |
+
+
 ### Deployment on HuggingFace
+
+I used Streamlit Framework for deploying this model but only run locally, if wanting run on server of HuggingFace, we need to register model (because of this model builded from scratch) [more information](https://huggingface.co/docs/transformers/custom_models)
+
+<p align="center">
+  <img align="center" src="https://github.com/tph-kds/image_storages/blob/96e0e682d3b8a959396cc229a766c4e5fd82d700/images/svgs/vqa-llm/deployment.png" width="800">
+  
+</p>
 
 ### Acknowledgements
 
@@ -119,7 +133,7 @@ Google - ViT ( visual_feature_extractor ): The Vision Transformer (ViT) is a tra
 - Fine-tune on a larger dataset
 - Evaluation on downstream tasks
 - Experiment with different model sizes
-- Experiment with different serving frameworks: vLLM, TGI, etc.
+- Experiment with different serving frameworks: vLLM, TGI, Triton Inference Server, etc.
 - Experiment with expanding the tokenizer and prepare for pre-training
 
 Stay tuned for future releases as we are continuously working on improving the model, expanding the dataset, and adding new features.
@@ -128,15 +142,19 @@ Thank you for your interest in my project. We hope you find it useful. If you ha
 
 ### References
 
-- PAPER OK-VQA: A Visual Question Answering Benchmark Requiring
-External Knowledge
-[Available on this link](https://arxiv.org/pdf/1906.00067). [Online; accessed June 1, 2024].
-
-- PAPER OK-VQA: A Visual Question Answering Benchmark Requiring
+- PAPER: OK-VQA: A Visual Question Answering Benchmark Requiring
 External Knowledge
 [Available on this link](https://arxiv.org/pdf/1906.00067). [Online; accessed June 1, 2024].
 
 
+- PAPER: Stanislaw Antol and others. “VQA: Visual Question Answering”.
+inInternational Conference on Computer Vision (ICCV): 2015.
+[Available on this link](https://arxiv.org/pdf/1505.00468). [Online; accessed June 1, 2024].
+
+- PAPER: Yash Goyal andothers. Making the V in VQA Matter: Elevating the
+Role of Image Understanding in Visual Question Answering. 2017.
+arXiv: 1612.00837 [cs.CV]. 
+[Available on this link](https://arxiv.org/abs/1612.00837). [Online; accessed June 1, 2024].
 
 ## Citation
 
