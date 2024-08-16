@@ -1,21 +1,16 @@
 import os
 import sys
 import logging
+from src.vqa_llm.logger.logger import MainLoggerHandler
 
-logging_str = "[%(asctime)s : %(levelname)s: %(module)s : %(message)s]"
+format_logging = "[%(asctime)s : %(levelname)s: %(module)s : %(message)s]"
+datefmt_logging = "%m/%d/%Y %H:%M:%S"
 
 log_dir = "logs"
-log_filepath = os.path.join(log_dir,"running_logs.log")
-os.makedirs(log_dir, exist_ok=True)
+name_file_logs = "running_logs.log"
 
-logging.basicConfig(
-    level=logging.INFO,
-    format=logging_str,
-
-    handlers=[
-        logging.FileHandler(log_filepath),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
-
-logger = logging.getLogger("vqa_logger")
+logger = MainLoggerHandler(name = "vqa_logger",
+                           format_logging=format_logging,
+                            datefmt_logging=datefmt_logging,
+                            log_dir=log_dir,
+                            name_file_logs=name_file_logs)
