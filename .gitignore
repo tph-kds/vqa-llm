@@ -170,3 +170,9 @@ node_modules/
 manual.md
 .husky/_/
 
+src/__pycache__
+src/vqa_llm/__pycache__
+
+tests/manual.md
+logs/*
+

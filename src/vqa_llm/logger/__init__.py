@@ -3,7 +3,7 @@ import sys
 import logging
 from src.vqa_llm.logger.logger import MainLoggerHandler
 
-format_logging = "[%(asctime)s : %(levelname)s: %(module)s : %(message)s]"
+format_logging = "[%(asctime)s - { %(levelname)s } - { %(module)s } - %(message)s]"
 datefmt_logging = "%m/%d/%Y %H:%M:%S"
 
 log_dir = "logs"

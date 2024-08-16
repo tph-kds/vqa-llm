@@ -34,6 +34,7 @@ class MainLoggerHandler(LoggerHandler):
         self.datefmt_logging = datefmt_logging 
         self.log_dir = log_dir 
         self.name_file_logs = name_file_logs 
+        self.logger = self.get_logger()
 
     def reset_logging(self):
         r"""
@@ -67,5 +68,15 @@ class MainLoggerHandler(LoggerHandler):
 
         return logger
 
-
+    def log_message(self, level, message):
+        if level == "debug":
+            self.logger.debug(message)
+        elif level == "info":
+            self.logger.info(message)
+        elif level == "warning":
+            self.logger.warning(message)
+        elif level == "error":
+            self.logger.error(message)
+        elif level == "critical":
+            self.logger.critical(message)
 
