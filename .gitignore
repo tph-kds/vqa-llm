@@ -172,6 +172,17 @@ manual.md
 
 src/__pycache__
 src/vqa_llm/__pycache__
+src/vqa_llm/components/__pycache__
+src/vqa_llm/config/__pycache__
+src/vqa_llm/exception/__pycache__
+src/vqa_llm/inference/__pycache__
+src/vqa_llm/logger/__pycache__
+src/vqa_llm/models/__pycache__
+src/vqa_llm/pipeline/__pycache__
+src/vqa_llm/utils/__pycache__
+
+
+
 
 tests/manual.md
 logs/*
