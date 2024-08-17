@@ -1,5 +1,7 @@
 
 
+## [1.2.2](https://github.com/tph-kds/vqa-llm/compare/v1.2.1...v1.2.2) (2024-08-17)
+
 ## [1.2.0](https://github.com/tph-kds/vqa-llm/compare/1.1.0...1.2.0) (2024-07-03)
 
 

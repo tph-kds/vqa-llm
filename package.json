@@ -1,6 +1,6 @@
 {
   "name": "vqa-llm",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "<h1 align=\"center\">VISUAL QUESTION ANSWERING - LLM</h1>",
   "main": "index.js",
   "directories": {
