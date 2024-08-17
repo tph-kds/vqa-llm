@@ -1,0 +1,21 @@
+embed_dim : 512
+num_layers: 2
+dropout: 0.3
+input_layer: 128
+output_layer: 256
+n_dense: 6
+batchnorm_layer: 256
+# output_classification: len_vocab
+w_s: 0.5
+learning_rate: 0.001
+batch_size: 32
+num_epochs: 20
+expansion_factor: 4
+n_heads: 8
+hidden_dim: 128
+
+train_steps: 20000
+# learning_rate: 5e-5
+weight_decay: 1e-5
+eps : 1e-8
+warm_steps: 20000 * 0.1

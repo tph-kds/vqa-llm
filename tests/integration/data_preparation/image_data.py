@@ -3,7 +3,7 @@ import os
 import sys
 from src.vqa_llm.logger import logger
 from src.vqa_llm.exception.exception import MyException
-from src.vqa_llm.components.data_preparation import PrepareImageData, PrepareTextData
+from src.vqa_llm.components import PrepareImageData
 
 
 if __name__ == "__main__":
