@@ -4,7 +4,7 @@ import logging
 
 class LoggerHandler(logging.Handler):
     def __init__(self):
-        super().__init__()
+        super(LoggerHandler, self).__init__()
         self.log = ""
 
     def reset(self):
@@ -28,7 +28,7 @@ class MainLoggerHandler(LoggerHandler):
                  log_dir,
                  name_file_logs):
         
-        super().__init__()
+        super(MainLoggerHandler, self).__init__()
         self.name = name  
         self.format_logging = format_logging  
         self.datefmt_logging = datefmt_logging 

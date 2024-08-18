@@ -12,7 +12,7 @@ class MyException(Exception):
 
         # self.lineno=exc_tb.tb_lineno
         # self.file_name=exc_tb.tb_frame.f_code.co_filename
-        super().__init__(error_message)
+        super(MyException, self).__init__(error_message)
         self.error_message = error_message
         self.line_number = None
         self.file_name = None

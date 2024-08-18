@@ -26,6 +26,8 @@ class VQADatasetTokenizer(Dataset):
                  type_data: str = "train", 
                  device: str = "cpu"):
         
+        super(VQADatasetTokenizer, self).__init__()
+        
         self.df = df
         self.image_encoder = image_encoder
         self.text_encoder = text_encoder

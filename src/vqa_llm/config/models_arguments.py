@@ -31,11 +31,16 @@ class ModelArguments:
     train_steps: int = field(default=1000, metadata={"help": "Number of train steps."})
     weight_decay: float = field(default=0.01, metadata={"help": "Weight decay."})
     adam_epsilon: float = field(default=1e-8, metadata={"help": "Adam epsilon."})
+    warmup_steps: int = field(default=100, metadata={"help": "Warmup steps."})
+    max_grad_norm: float = field(default=1.0, metadata={"help": "Max gradient norm."})
+    seed: int = field(default=42, metadata={"help": "Random seed."})
+    gradient_accumulation_steps: int = field(default=1, metadata={"help": "Gradient accumulation steps."})
+    max_steps: int = field(default=-1, metadata={"help": "If > 0: set total number of training steps to perform. Override num_train_epochs."})
+    logging_steps: int = field(default=100, metadata={"help": "Log every X updates steps."})
+    save_steps: int = field(default=100, metadata={"help": "Save checkpoint every X updates steps."})
+    eval_steps: int = field(default=100, metadata={"help": "Eval every X updates steps."})
+    no_cuda: bool = field(default=False, metadata={"help": "Do not use CUDA even when it is available."})
     
-    pretrained_model_name_or_path: Optional[str] = field(
-        default=None, metadata={"help": "Path to pretrained model or model identifier from huggingface.co/models"}
-    )
-
 
     
 

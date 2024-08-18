@@ -16,6 +16,8 @@ class DataLoader_Encoder:
                  dataset: VQADatasetTokenizer, 
                  batch_size: int, 
                  type_data: str = "train",):
+        super(DataLoader_Encoder, self).__init__()
+        
         self.dataset = dataset
         self.batch_size = batch_size
         self.type_data = type_data
