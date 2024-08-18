@@ -15,7 +15,8 @@ from src.vqa_llm.utils.file import File
 
 class PrepareTextData:
     def __init__(self):
-        pass
+
+        super(PrepareTextData, self).__init__()
         # self.stored_answer_file = sorted_answer_file
         # self.image_id_list = image_id_list
         # self.question_id_list = question_id_list

@@ -5,6 +5,7 @@ from src.vqa_llm.utils.file import File
 
 class ProcessText:
     def __init__(self, name_file:str):
+        super(ProcessText, self).__init__()
         self.name_file = name_file
         self.df = File(self.name_file).read_file_csv()
         self.labels_idx = self.labels_idx()

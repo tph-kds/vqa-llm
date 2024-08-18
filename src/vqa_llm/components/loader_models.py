@@ -26,7 +26,7 @@ class LoadModel:
                  visual_feature_extractor_name:str, 
                  device:str,):
         
-        
+        super(LoadModel, self).__init__()
         self.textual_feature_extractor_name = textual_feature_extractor_name
         self.visual_feature_extractor_name = visual_feature_extractor_name
 

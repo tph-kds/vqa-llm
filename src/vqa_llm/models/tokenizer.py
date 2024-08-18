@@ -49,7 +49,8 @@ class VQADatasetTokenizer(Dataset):
             full_path = self.type_data + "/images/" + image_file
             source_image = os.path.join(os.getcwd(), full_path)
             image = Image.open(source_image).convert("RGB")
-            label = self.df['label'][idx]
+            if self.type_data == "train" or self.type_data == "val":
+                label = self.df['label'][idx]
 
             """ When Transformers are used for V backbone"""
             image_inputs = self.image_processor(image, return_tensors="pt")
@@ -60,7 +61,7 @@ class VQADatasetTokenizer(Dataset):
             image_embedding = image_embedding.detach()
 
             text_inputs = self.tokenizer(question, return_tensors="pt")
-            text_inputs = {k:v.to(device) for k,v in text_inputs.items()}
+            text_inputs = {k:v.to(self.device) for k,v in text_inputs.items()}
             text_outputs = self.text_encoder(**text_inputs)
             text_embedding = text_outputs.pooler_output # You can experiment with this or raw CLS embedding below
             #text_embedding = text_outputs.last_hidden_state[:,0,:] # Raw CLS embedding
@@ -70,7 +71,8 @@ class VQADatasetTokenizer(Dataset):
             encoding={}
             encoding["image_emb"] = image_embedding
             encoding["question_emb"] = text_embedding
-            encoding["label"] = torch.tensor(label, dtype=torch.long)
+            if self.type_data == "train" or self.type_data == "val":
+                encoding["label"] = torch.tensor(label, dtype=torch.long)
 
             logger.log_message("info", "Tokenizing data... Done!")
 

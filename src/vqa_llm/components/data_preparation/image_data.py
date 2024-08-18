@@ -22,6 +22,8 @@ class PrepareImageData:
                  destination_folder:str, 
                  images_folder:str):
         
+        super(PrepareImageData, self).__init__()
+        
         self.current_folder = current_folder
         self.source_folder = source_folder
         self.destination_folder = destination_folder

@@ -6,6 +6,7 @@ from src.vqa_llm.exception.exception import MyException
 
 class File:
     def __init__(self, file_name:str):
+        super(File, self).__init__()
         self.file_name = file_name
 
     def read_file_json(self) -> Dict:

@@ -6,6 +6,7 @@ from PIL import Image
 class ImageHandling:
     def __init__(self, 
                  image_path:str):
+        super(ImageHandling, self).__init__()
         self.image_path = image_path
         
     # Function to preprocess the image
