@@ -36,14 +36,14 @@ Building a multi-model usually is a difficult challenge that scientists want to 
 VQA model is a deep neural network that learns and responds to users when they provide questions and related images, the model will answer reliance on those information. Namely, as below images:
 
 <p align="center">
-  <img align="center" src="https://github.com/tph-kds/image_storages/blob/96e0e682d3b8a959396cc229a766c4e5fd82d700/images/svgs/vqa-llm/examples.png" width="800">
+  <img align="center" src="readme/images/examples.png" width="800">
   
 </p>
 
 ### Architecture
 
 <p align="center">
-  <img align="center" src="https://github.com/tph-kds/image_storages/blob/96e0e682d3b8a959396cc229a766c4e5fd82d700/images/svgs/vqa-llm/architecture.png" width="800">
+  <img align="center" src="readme/images/architecture.png" width="800">
   
 </p>
 
@@ -118,7 +118,7 @@ Google - ViT ( visual_feature_extractor ): The Vision Transformer (ViT) is a tra
 I used Streamlit Framework for deploying this model but it can only could be run locally, if wanting to run it on the server of HuggingFace, we need to complete some steps related to registering the model (because this model is built from scratch) [more information](https://huggingface.co/docs/transformers/custom_models)
 
 <p align="center">
-  <img align="center" src="https://github.com/tph-kds/image_storages/blob/71f14c525869084d53e5e383c2bd49dea99f6239/images/svgs/vqa-llm/deployment.png" width="800">
+  <img align="center" src="readme/images/deployment.png" width="800">
   
 </p>
 
